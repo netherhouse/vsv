@@ -1,0 +1,153 @@
+.header {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #365c36;
+  padding: 10px 0;
+  box-sizing: unset;
+}
+
+.nav__list {
+  display: flex;
+  list-style-type: none;
+  z-index: 1;
+}
+.nav__link {
+  display: inline-block;
+  color: white;
+  padding: 5px 0;
+  margin: 0 10px;
+  border: 3px solid transparent;
+  text-transform: uppercase;
+  transition: 0.2s;
+  text-decoration: none;
+}
+header nav ul li a:hover,
+header nav ul li a.active {
+  border-bottom-color: antiquewhite;
+}
+
+.nav {
+  z-index: 1;
+}
+/* dropdown */
+.dropdown {
+  cursor: pointer;
+  display: none;
+}
+.dropdown div {
+  width: 30px;
+  height: 3px;
+  margin: 5px 0;
+  background: rgb(243, 248, 239);
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+/* Shared - end */
+
+/* header */
+.header__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: inherit;
+}
+
+.header__box--logo {
+  position: relative;
+  height: inherit;
+  aspect-ratio: 3 / 1;
+}
+
+.logo {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+@media only screen and (max-width: 1000px) {
+  header {
+    padding: 0 30px;
+  }
+  header nav ul li a {
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width: 830px) {
+  .header {
+    height: 30px;
+  }
+
+  .dropdown {
+    display: block;
+  }
+  .nav {
+    position: absolute;
+    width: 100%;
+    left: -100%;
+    top: 100%;
+    width: 100%;
+    background: rgb(54, 92, 54);
+    padding: 30px;
+    transition: 0.3s;
+  }
+  header #nav_check:checked ~ nav {
+    left: 0;
+  }
+  .nav__list {
+    display: block;
+  }
+  .nav__link {
+    margin: 5px 0;
+  }
+}
+@media (max-width: 992px) {
+  .navbar .links,
+  .navbar .action__btn__language {
+    display: none;
+  }
+  .navbar .toggle__btn {
+    display: block;
+  }
+
+  .dropdown__menu {
+    display: block;
+  }
+}
+/* !header dropdown */
+@media only screen and (max-width: 1000px) {
+  header {
+    padding: 0 30px;
+  }
+  header nav ul li a {
+    font-size: 12px;
+  }
+}
+@media (max-width: 1200px) {
+  .main__header {
+    position: relative;
+    display: flex;
+
+    padding: 0 30px;
+    height: calc(100vh - 400px);
+    transition: 0.3s;
+  }
+  .main__header .info h1 {
+    font-size: 32px;
+    transition: 0.3s;
+  }
+  .main__header .info p {
+    font-size: 18px;
+    transition: 0.3s;
+  }
+}

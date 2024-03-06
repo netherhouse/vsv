@@ -1,0 +1,123 @@
+.container_history {
+  background-color: #e8f0db;
+}
+.header__history {
+  text-align: center;
+  padding: 20px 0 20px 0;
+}
+.h1__History {
+  font-size: 36px;
+  color: #000;
+  margin-bottom: 20px;
+}
+.line {
+  width: 50%;
+  height: 1px;
+  background-color: #000;
+  margin-top: 20px;
+  margin-left: 450px;
+}
+.blog-container {
+  display: flex;
+  margin: 20px -10px;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+#blog {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 30px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
+.blog-box {
+  width: 33.33%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.blog-box--inner {
+  background-color: #ffffff;
+  border: 1px solid #cecece;
+  height: 100%;
+}
+.blog-img {
+  height: 200px;
+  position: relative;
+  overflow: hidden;
+}
+.blog-info {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  z-index: 2;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.blog-info span {
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: 300;
+}
+.blog-img img {
+  cursor: pointer;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.7s ease;
+}
+.blog-img img:hover {
+  transform: scale(1.1);
+  opacity: 0.8;
+}
+
+.blog-text {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+}
+.blog-text span {
+  color: #f33c3c;
+  font-size: 0.9rem;
+}
+.blog-text .blog-title {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #272727;
+}
+.blog-text .blog-title:hover {
+  color: #f33c3c;
+  transition: all ease 0.3s;
+}
+.blog-text p {
+  color: #9b9b9b;
+  font-size: 0.9rem;
+  text-overflow: ellipsis;
+  margin: 20px 0px;
+}
+.blog-text a {
+  color: #0f0f0f;
+}
+.blog-text a:hover {
+  color: #f33c3c;
+  transition: all ease 0.3s;
+}
+@media screen and (max-width: 850px) {
+  .blog-box {
+    flex: 0 0 50%;
+  }
+}
+@media (max-width: 576px) {
+  .blog-box {
+    flex: 0 0 100%;
+  }
+  .content-wrapper {
+    width: 100%;
+  }
+  .content {
+    width: 95%;
+  }
+}
